@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:SpaceScout.xcodeproj">
+      location = "self:IlliniSpaces.xcodeproj">
    </FileRef>
 </Workspace>

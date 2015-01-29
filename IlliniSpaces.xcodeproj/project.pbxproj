@@ -402,7 +402,7 @@
 		C224DA8018D0FEEA00589CAD /* OverlayMessage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverlayMessage.xib; sourceTree = "<group>"; };
 		C224DA8218D1004100589CAD /* OverlayMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OverlayMessage.h; path = Widgets/OverlayMessage.h; sourceTree = "<group>"; };
 		C224DA8318D1004100589CAD /* OverlayMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OverlayMessage.m; path = Widgets/OverlayMessage.m; sourceTree = "<group>"; };
-		C224FBED15361C2300CD4A79 /* filter_config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = filter_config.json; sourceTree = "<group>"; };
+		C224FBED15361C2300CD4A79 /* filter_config.json */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = text.json; path = filter_config.json; sourceTree = "<group>"; tabWidth = 2; };
 		C224FBF21536300400CD4A79 /* MapFilterDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapFilterDetailsViewController.h; path = ViewControllers/MapFilterDetailsViewController.h; sourceTree = "<group>"; };
 		C224FBF31536300500CD4A79 /* MapFilterDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapFilterDetailsViewController.m; path = ViewControllers/MapFilterDetailsViewController.m; sourceTree = "<group>"; };
 		C224FBF5153630AA00CD4A79 /* SpaceDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpaceDetailsViewController.h; path = ViewControllers/SpaceDetailsViewController.h; sourceTree = "<group>"; };
@@ -635,11 +635,11 @@
 		C2FB9EE018F8B6DC0068BD09 /* Fav_BlankHeart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fav_BlankHeart.png; sourceTree = "<group>"; };
 		C2FC51401910323300472D4E /* SideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideMenuViewController.h; sourceTree = "<group>"; };
 		C2FC51411910323300472D4E /* SideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideMenuViewController.m; sourceTree = "<group>"; };
-		C2FDB0DE150A802D00ED3A93 /* SpaceScout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceScout.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2FDB0DE150A802D00ED3A93 /* IlliniSpaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IlliniSpaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2FDB0E2150A802D00ED3A93 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C2FDB0E4150A802D00ED3A93 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C2FDB0E6150A802D00ED3A93 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		C2FDB0EA150A802D00ED3A93 /* SpaceScout-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpaceScout-Info.plist"; sourceTree = "<group>"; };
+		C2FDB0EA150A802D00ED3A93 /* IlliniSpaces-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IlliniSpaces-Info.plist"; sourceTree = "<group>"; };
 		C2FDB0EC150A802D00ED3A93 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C2FDB0EE150A802D00ED3A93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C2FDB0F0150A802D00ED3A93 /* SpaceScout-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpaceScout-Prefix.pch"; sourceTree = "<group>"; };
@@ -1177,7 +1177,7 @@
 		C2FDB0DF150A802D00ED3A93 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C2FDB0DE150A802D00ED3A93 /* SpaceScout.app */,
+				C2FDB0DE150A802D00ED3A93 /* IlliniSpaces.app */,
 				C2FDB0FF150A802E00ED3A93 /* SpaceScoutTests.octest */,
 			);
 			name = Products;
@@ -1236,7 +1236,7 @@
 			children = (
 				C24B24DF158BC44F001C4B3F /* images */,
 				C25166681533713B002CEDB6 /* spotseeker.plist */,
-				C2FDB0EA150A802D00ED3A93 /* SpaceScout-Info.plist */,
+				C2FDB0EA150A802D00ED3A93 /* IlliniSpaces-Info.plist */,
 				C2FDB0EB150A802D00ED3A93 /* InfoPlist.strings */,
 				C2FDB0EE150A802D00ED3A93 /* main.m */,
 				C2FDB0F0150A802D00ED3A93 /* SpaceScout-Prefix.pch */,
@@ -1276,9 +1276,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C2FDB0DD150A802D00ED3A93 /* SpaceScout */ = {
+		C2FDB0DD150A802D00ED3A93 /* IlliniSpaces */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C2FDB111150A802E00ED3A93 /* Build configuration list for PBXNativeTarget "SpaceScout" */;
+			buildConfigurationList = C2FDB111150A802E00ED3A93 /* Build configuration list for PBXNativeTarget "IlliniSpaces" */;
 			buildPhases = (
 				C2FDB0DA150A802D00ED3A93 /* Sources */,
 				C2FDB0DB150A802D00ED3A93 /* Frameworks */,
@@ -1288,9 +1288,9 @@
 			);
 			dependencies = (
 			);
-			name = SpaceScout;
+			name = IlliniSpaces;
 			productName = SpotSeeker;
-			productReference = C2FDB0DE150A802D00ED3A93 /* SpaceScout.app */;
+			productReference = C2FDB0DE150A802D00ED3A93 /* IlliniSpaces.app */;
 			productType = "com.apple.product-type.application";
 		};
 		C2FDB0FE150A802E00ED3A93 /* SpaceScoutTests */ = {
@@ -1310,7 +1310,7 @@
 			name = SpaceScoutTests;
 			productName = SpotSeekerTests;
 			productReference = C2FDB0FF150A802E00ED3A93 /* SpaceScoutTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -1318,7 +1318,7 @@
 		C2FDB0D5150A802D00ED3A93 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0610;
 				TargetAttributes = {
 					C2FDB0DD150A802D00ED3A93 = {
 						DevelopmentTeam = THEWY9596Q;
@@ -1328,7 +1328,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C2FDB0D8150A802D00ED3A93 /* Build configuration list for PBXProject "SpaceScout" */;
+			buildConfigurationList = C2FDB0D8150A802D00ED3A93 /* Build configuration list for PBXProject "IlliniSpaces" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -1341,7 +1341,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C2FDB0DD150A802D00ED3A93 /* SpaceScout */,
+				C2FDB0DD150A802D00ED3A93 /* IlliniSpaces */,
 				C2FDB0FE150A802E00ED3A93 /* SpaceScoutTests */,
 			);
 		};
@@ -1648,7 +1648,7 @@
 /* Begin PBXTargetDependency section */
 		C2FDB105150A802E00ED3A93 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C2FDB0DD150A802D00ED3A93 /* SpaceScout */;
+			target = C2FDB0DD150A802D00ED3A93 /* IlliniSpaces */;
 			targetProxy = C2FDB104150A802E00ED3A93 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1699,10 +1699,12 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1736,10 +1738,12 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: University of Washington";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: University of Washington";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -1765,14 +1769,14 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SpotSeeker/SpaceScout-Prefix.pch";
-				INFOPLIST_FILE = "SpotSeeker/SpaceScout-Info.plist";
+				INFOPLIST_FILE = "SpotSeeker/IlliniSpaces-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/GoogleAnalytics",
 					"$(PROJECT_DIR)/GoogleAnalytics",
 				);
-				PRODUCT_NAME = SpaceScout;
+				PRODUCT_NAME = IlliniSpaces;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1788,14 +1792,14 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SpotSeeker/SpaceScout-Prefix.pch";
-				INFOPLIST_FILE = "SpotSeeker/SpaceScout-Info.plist";
+				INFOPLIST_FILE = "SpotSeeker/IlliniSpaces-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/GoogleAnalytics",
 					"$(PROJECT_DIR)/GoogleAnalytics",
 				);
-				PRODUCT_NAME = SpaceScout;
+				PRODUCT_NAME = IlliniSpaces;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "566ED9BC-0BC1-41F8-AB69-946D9F64CAE4";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1806,7 +1810,7 @@
 		C2FDB115150A802E00ED3A93 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpaceScout.app/SpaceScout";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IlliniSpaces.app/IlliniSpaces";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
@@ -1823,7 +1827,7 @@
 		C2FDB116150A802E00ED3A93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpaceScout.app/SpaceScout";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IlliniSpaces.app/IlliniSpaces";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
@@ -1840,7 +1844,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C2FDB0D8150A802D00ED3A93 /* Build configuration list for PBXProject "SpaceScout" */ = {
+		C2FDB0D8150A802D00ED3A93 /* Build configuration list for PBXProject "IlliniSpaces" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C2FDB10F150A802E00ED3A93 /* Debug */,
@@ -1849,7 +1853,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C2FDB111150A802E00ED3A93 /* Build configuration list for PBXNativeTarget "SpaceScout" */ = {
+		C2FDB111150A802E00ED3A93 /* Build configuration list for PBXNativeTarget "IlliniSpaces" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C2FDB112150A802E00ED3A93 /* Debug */,
