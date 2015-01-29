@@ -80,7 +80,7 @@
     NSMutableDictionary *current_obj = self.filter;
     [current_obj setObject:[NSNumber numberWithLong:row]  forKey:@"selected_row"];
     
-    NSString *title = [[[current_obj objectForKey:@"options"] objectAtIndex:row] objectForKey:@"title"];
+    NSString *title = [[[current_obj objectForKey:@"options"] objectAtIndex:row] objectForKey:@"short"];
     [filter_selection setTitle:title forState:UIControlStateNormal];
 
 }

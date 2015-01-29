@@ -534,7 +534,7 @@
     }
     else {
         NSInteger current_row = [selected_row  integerValue];
-        selected_value = [[[current_obj objectForKey:@"options"] objectAtIndex:current_row] objectForKey:@"title"];
+        selected_value = [[[current_obj objectForKey:@"options"] objectAtIndex:current_row] objectForKey:@"short"];
     }
 
     
