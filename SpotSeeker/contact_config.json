@@ -2,12 +2,12 @@
 {
  "type":"suggestion",
  "title": "Suggest a space",
- "description": "Email an unlisted space you've discovered to add to SpaceScout.",
+ "description": "Email an unlisted space you've discovered to add to IlliniSpaces.",
  "email_to": [
-              "spacescout@uw.edu"
+              "illinispaces-support@lists.illinois.edu"
               ],
  "email_prefix": "Note: Please answer following questions to help us identify the space you are suggesting.",
- "email_postfix": "Note: Please attach pictures of suggested space to this email. SpaceScout and fellow UW students appreciate your suggestion!",
+ "email_postfix": "Note: Please attach pictures of suggested space to this email. IlliniSpaces and fellow UIUC students appreciate your suggestion!",
  "fields": [
             {
             "name": "Building Name",

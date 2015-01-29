@@ -1,188 +1,88 @@
- [
-  {
+[
+{
   "section_name":"basics",
   "filters":[
-             {
-             "options" : [
-                          {
-                          "search_value" : "",
-                          "selected" : true,
-                          "clear_all" : true
-                          },
-                          {
-                          "search_value" : "study_room"
-                          },
-                          {
-                          "search_value" : "study_area"
-                          },
-                          {
-                          "search_value" : "computer_lab"
-                          },
-                          {
-                          "search_value" : "studio"
-                          },
-                          {
-                          "search_value" : "classroom"
-                          },
-                          {
-                          "search_value" : "open"
-                          },
-                          {
-                          "search_value" : "lounge"
-                          },
-                          {
-                          "search_value" : "cafe"
-                          },
-                          {
-                          "search_value" : "outdoor"
-                          }
-                          ],
-             "search_key" : "type"
-             },
-             {
-             "no_selection_label":"1",
-             "table_row_type":"cell_with_chooser",
-             "search_key":"capacity",
-             "options": [
-                         { "title":"1", "short":"1", "search_value":"1" },
-                         { "title":"2", "short":"2", "search_value":"2" },
-                         { "title":"3", "short":"3", "search_value":"3" },
-                         { "title":"4", "short":"4", "search_value":"4" },
-                         { "title":"5", "short":"5", "search_value":"5" },
-                         { "title":"6", "short":"6", "search_value":"6" },
-                         { "title":"7", "short":"7", "search_value":"7" },
-                         { "title":"8", "short":"8", "search_value":"8" },
-                         { "title":"9", "short":"9", "search_value":"9" },
-                         { "title":"10", "short":"10", "search_value":"10" },
-                         { "title":"15", "short":"15", "search_value":"15" },
-                         { "title":"20", "short":"20", "search_value":"20" },
-                         { "title":"25+", "short":"25+", "search_value":"25" }
-                         
-                         ]
-             },
-             {
-             "search_key":"open_now",
-             "default_search_value":"1",
-             "default_selection_label":"Open now",
-             "table_row_type":"cell_with_time",
-             "options": []
-             },
-             {
-             "options" : [
-                          {
-                          "search_value" : "",
-                          "clear_all" : true,
-                          "selected" : true
-                          },
-                          {
-                          "search_value" : "true"
-                          }
-                          ],
-             "search_key" : "extended_info:reservable"
-             },
-             {
-             "screen_title":"Select building",
-             "search_key":"building_name",
-             "table_row_type":"cell_with_indexed_table",
-             "default_selection_label":"All Buildings",
-             "clear_selections_label":"All Buildings",
-             "data_source":"/api/v1/buildings?campus=%@"
-             }
-             ]
+  {
+    "search_key":"type",
+    "options":[
+      { "search_value":"", "selected":true, "clear_all":true },
+      { "search_value":"study_room" },
+      { "search_value":"study_area" },
+      { "search_value":"computer_lab" },
+      { "search_value":"studio" },
+      { "search_value":"classroom" },
+      { "search_value":"open" },
+      { "search_value":"lounge" },
+      { "search_value":"cafe" },
+      { "search_value":"outdoor" }
+    ]
   },
   {
-  "section_name":"environment",
-  "filters":[
-             {
-             "options" : [
-                          {
-                          "search_value" : "",
-                          "clear_all" : true,
-                          "selected" : true
-                          },
-                          {
-                          "search_value" : "silent"
-                          },
-                          {
-                          "search_value" : "quiet"
-                          },
-                          {
-                          "search_value" : "moderate"
-                          }
-                          ],
-             "search_key" : "extended_info:noise_level"
-             },
-             {
-             "options" : [
-                          {
-                          "search_value" : "",
-                          "clear_all" : true,
-                          "selected" : true
-                          },
-                          {
-                          "search_value" : "true"
-                          }
-                          ],
-             "search_key" : "extended_info:has_natural_light"
-             },
-             {
-             "options" : [
-                          {
-                          "search_value" : "",
-                          "clear_all" : true,
-                          "selected" : true
-                          },
-                          {
-                          "search_value" : "true",
-                          "search_key" : "extended_info:has_whiteboards"
-                          },
-                          {
-                          "search_value" : "true",
-                          "search_key" : "extended_info:has_outlets"
-                          },
-                          {
-                          "search_value" : "true",
-                          "search_key" : "extended_info:has_computers"
-                          },
-                          {
-                          "search_value" : "true",
-                          "search_key" : "extended_info:has_displays"
-                          },
-                          {
-                          "search_value" : "true",
-                          "search_key" : "extended_info:has_projector"
-                          },
-                          {
-                          "search_value" : "true",
-                          "search_key" : "extended_info:has_printing"
-                          },
-                          {
-                          "search_value" : "true",
-                          "search_key" : "extended_info:has_scanner"
-                          }
-                          ],
-             "search_key" : "equipment"
-             },
-             {
-             "options" : [
-                          {
-                          "search_value" : "",
-                          "clear_all" : true,
-                          "selected" : true
-                          },
-                          {
-                          "search_value" : "space"
-                          },
-                          {
-                          "search_value" : "building"
-                          },
-                          {
-                          "search_value" : "neighboring"
-                          }
-                          ],
-             "search_key" : "extended_info:food_nearby"
-             }
-                          
-             ]
+    "search_key":"equipment",
+    "options":[
+      { "search_value":"", "clear_all":true, "selected":true },
+      { "search_value":"true", "search_key":"extended_info:has_whiteboards" },
+      { "search_value":"true", "search_key":"extended_info:has_outlets" },
+      { "search_value":"true", "search_key":"extended_info:has_computers" },
+      { "search_value":"true", "search_key":"extended_info:has_scanner" },
+      { "search_value":"true", "search_key":"extended_info:has_displays" },
+      { "search_value":"true", "search_key":"extended_info:has_projector" },
+      { "search_value":"true", "search_key":"extended_info:has_printing" }
+    ]
+  },
+  {
+    "search_key":"building_name",
+    "screen_title":"Select building",
+    "table_row_type":"cell_with_indexed_table",
+    "default_selection_label":"All Buildings",
+    "clear_selections_label":"All Buildings",
+    "data_source":"/api/v1/buildings?campus=%@"
+  },
+  {
+    "search_key":"open_now",
+    "default_search_value":"1",
+    "default_selection_label":"Open now",
+    "table_row_type":"cell_with_time",
+    "options":[]
+  },
+  {
+    "search_key":"extended_info:food_allowed",
+    "no_selection_label":"",
+    "table_row_type":"cell_with_chooser",
+    "options":[
+      { "title":"No Preference", "short":"No Pref.", "search_value":"" },
+      { "title":"No food or drinks", "short":"None", "search_value":"none" },
+      { "title":"Covered drinks only", "short":"Covered", "search_value":"covered_drink" },
+      { "title":"Any food or drinks", "short":"Any", "search_value":"any" }
+    ]
+  },
+  {
+    "search_key":"extended_info:reservable",
+    "options":[
+      { "search_value":"", "clear_all":true, "selected":true },
+      { "search_value":"true" }
+    ]
+  },
+  {
+    "search_key":"capacity",
+    "no_selection_label":"1",
+    "table_row_type":"cell_with_chooser",
+    "options":[
+      { "title":"1", "short":"1", "search_value":"1" },
+      { "title":"2", "short":"2", "search_value":"2" },
+      { "title":"3", "short":"3", "search_value":"3" },
+      { "title":"4", "short":"4", "search_value":"4" },
+      { "title":"5", "short":"5", "search_value":"5" },
+      { "title":"6", "short":"6", "search_value":"6" },
+      { "title":"7", "short":"7", "search_value":"7" },
+      { "title":"8", "short":"8", "search_value":"8" },
+      { "title":"9", "short":"9", "search_value":"9" },
+      { "title":"10", "short":"10", "search_value":"10" },
+      { "title":"15", "short":"15", "search_value":"15" },
+      { "title":"20", "short":"20", "search_value":"20" },
+      { "title":"25+", "short":"25+", "search_value":"25" }
+    ]
   }
   ]
+}
+]

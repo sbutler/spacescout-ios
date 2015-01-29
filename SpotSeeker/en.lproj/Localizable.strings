@@ -183,6 +183,27 @@
 "Search option subtitle extended_info:food_nearby neighboring" = "";
 "Search option short extended_info:food_nearby neighboring" = "In Neighb.";
 
+"Search screen label extended_info:food_allowed" = "Food Allowed";
+"Search screen title extended_info:food_allowed" = "Food Allowed";
+"Search screen header extended_info:food_allowed" = "Select allowed type of food";
+"Search screen subheader extended_info:food_allowed" = "";
+"Search screen default label extended_info:food_allowed" = "No preference";
+"Search option title extended_info:food_allowed " = "No preference";
+"Search option subtitle extended_info:food_allowed " = "";
+"Search option short extended_info:food_allowed " = "";
+"Search option title extended_info:food_allowed none" = "None allowed";
+"Search option subtitle extended_info:food_allowed none" = "";
+"Search option short extended_info:food_allowed none" = "None";
+"Search option title extended_info:food_allowed covered_drink" = "Covered drink";
+"Search option subtitle extended_info:food_allowed covered_drink" = "";
+"Search option short extended_info:food_allowed covered_drink" = "Covered";
+"Search option title extended_info:food_allowed any" = "Any allowed";
+"Search option subtitle extended_info:food_allowed any" = "";
+"Search option short extended_info:food_allowed any" = "Any";
+"Search screen label title extended_info:food_allowed" = "%@";
+"Search screen label picker title extended_info:food_allowed" = "";
+
+
 
 "Search screen label building_name" = "Building";
 

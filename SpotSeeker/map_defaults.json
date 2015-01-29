@@ -1,23 +1,12 @@
 [
  {
-    "longitude":-122.308393,
-    "latitude":47.656095,
-    "longitude_delta":0.005,
-    "latitude_delta":0.005,
-    "name":"UW Seattle",
-    "search_key": "seattle",
-    "is_default": true,
-    "screen_title": "UW Seattle Campus"
-
- },
- {
-    "longitude":-122.438046,
-    "latitude":47.24527,
-    "longitude_delta":0.005,
-    "latitude_delta":0.005,
-    "name":"UW Tacoma",
-    "search_key": "tacoma",
-    "screen_title": "UW Tacoma Campus"
-
+    "screen_title": "Urbana-Champaign Campus",
+    "search_key": "uiuc",
+    "name": "UIllinios Urbana-Champaign",
+    "latitude": 40.10527180599617,
+    "longitude": -88.22699516931152,
+    "longitude_delta":0.015,
+    "latitude_delta":0.015,
+    "is_default": true
  }
 ]

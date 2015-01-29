@@ -657,7 +657,7 @@
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <button opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hpY-07-Ju1">
-                                                    <rect key="frame" x="246" y="7" width="44" height="29"/>
+                                                    <rect key="frame" x="246" y="7" width="66" height="29"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="25">
                                                         <color key="titleColor" red="0.5176470876" green="0.48235294220000002" blue="0.66666668650000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -2439,7 +2439,6 @@ Remember your UW NetID will appear as the reviewer name.</string>
         <image name="placeholder_noImage_bw.png" width="200" height="168"/>
         <image name="reservable.png" width="22" height="22"/>
     </resources>
-    <color key="tintColor" red="0.63921568630000003" green="0.04745285563113992" blue="0.054841757837947543" alpha="1" colorSpace="calibratedRGB"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
@@ -2452,4 +2451,5 @@ Remember your UW NetID will appear as the reviewer name.</string>
         <segue reference="YtI-mQ-38u"/>
         <segue reference="8o3-ZB-NEA"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" red="0.63921568630000003" green="0.04745285563113992" blue="0.054841757837947543" alpha="1" colorSpace="calibratedRGB"/>
 </document>
