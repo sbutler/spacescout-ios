@@ -76,7 +76,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0078431372549019607" green="0.14509803921568626" blue="0.26666666666666666" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.23529411764705882" blue="0.49019607843137253" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
                             </view>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="9HE-8v-nHi">
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
@@ -267,7 +267,7 @@
                                                     <rect key="frame" x="77" y="11" width="197" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0078431372549019607" green="0.14509803921568626" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.0" green="0.23529411759999999" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                             </subviews>
@@ -312,7 +312,7 @@
                                                     <rect key="frame" x="108" y="11" width="165" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0078431372550000003" green="0.1450980392" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.0" green="0.23529411759999999" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                             </subviews>
@@ -336,7 +336,7 @@
                                                     <rect key="frame" x="68" y="11" width="205" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0078431372550000003" green="0.1450980392" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.0" green="0.23529411759999999" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                             </subviews>
@@ -377,7 +377,7 @@
                                                     <rect key="frame" x="72" y="11" width="202" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0078431372550000003" green="0.1450980392" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.0" green="0.23529411759999999" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                             </subviews>
@@ -2450,5 +2450,5 @@ Remember your UW NetID will appear as the reviewer name.</string>
         <segue reference="g4m-Tc-imM"/>
         <segue reference="CuN-QO-MxA"/>
     </inferredMetricsTieBreakers>
-    <color key="tintColor" red="0.0078431372550000003" green="0.1450980392" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+    <color key="tintColor" red="0.0" green="0.23529411764705882" blue="0.49019607843137253" alpha="1" colorSpace="calibratedRGB"/>
 </document>
