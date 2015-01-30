@@ -31,7 +31,7 @@
                                     <action selector="backButtonPressed:" destination="6hd-bL-kBO" eventType="touchUpInside" id="H4q-Gl-nG4"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SpaceScout" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5yx-wR-jix">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IlliniSpaces" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5yx-wR-jix">
                                 <rect key="frame" x="113" y="24" width="94" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -49,7 +49,7 @@
             </objects>
             <point key="canvasLocation" x="981" y="-541"/>
         </scene>
-        <!--SpaceScout-->
+        <!--IlliniSpaces-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="MapViewController" sceneMemberID="viewController">
@@ -111,7 +111,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="SpaceScout" id="f11-XH-hmO">
+                    <navigationItem key="navigationItem" title="IlliniSpaces" id="f11-XH-hmO">
                         <barButtonItem key="backBarButtonItem" title="Map" id="E3E-6D-F3L"/>
                         <barButtonItem key="leftBarButtonItem" image="Menu_3bars.png" style="plain" id="m4F-Sv-kmb">
                             <inset key="imageInsets" minX="-5" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -1342,7 +1342,7 @@
             </objects>
             <point key="canvasLocation" x="3844" y="780"/>
         </scene>
-        <!--SpaceScout-->
+        <!--IlliniSpaces-->
         <scene sceneID="d4a-jq-xVa">
             <objects>
                 <viewController id="tFu-VE-Lvr" customClass="SingleSpaceMapViewController" sceneMemberID="viewController">
@@ -1360,7 +1360,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="SpaceScout" id="glk-rS-omI">
+                    <navigationItem key="navigationItem" title="IlliniSpaces" id="glk-rS-omI">
                         <barButtonItem key="backBarButtonItem" title="Back" id="ByD-Yg-bsd"/>
                     </navigationItem>
                     <connections>
@@ -2130,7 +2130,7 @@ Remember your UW NetID will appear as the reviewer name.</string>
             </objects>
             <point key="canvasLocation" x="2584" y="1966"/>
         </scene>
-        <!--SpaceScout-->
+        <!--IlliniSpaces-->
         <scene sceneID="XeB-JD-BkB">
             <objects>
                 <viewController id="ty9-ZD-bvE" customClass="SpaceClusterViewController" sceneMemberID="viewController">
@@ -2216,7 +2216,7 @@ Remember your UW NetID will appear as the reviewer name.</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="SpaceScout" id="R48-Hc-Krn">
+                    <navigationItem key="navigationItem" title="IlliniSpaces" id="R48-Hc-Krn">
                         <barButtonItem key="backBarButtonItem" title="List" id="a9i-Fe-DaS"/>
                     </navigationItem>
                     <connections>
@@ -2248,7 +2248,7 @@ Remember your UW NetID will appear as the reviewer name.</string>
             </objects>
             <point key="canvasLocation" x="445" y="165"/>
         </scene>
-        <!--SpaceScout-->
+        <!--IlliniSpaces-->
         <scene sceneID="MQy-Rx-pvH">
             <objects>
                 <viewController id="ylv-3b-UIf" customClass="MainListViewController" sceneMemberID="viewController">
@@ -2359,7 +2359,7 @@ Remember your UW NetID will appear as the reviewer name.</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="SpaceScout" id="9Zl-UU-At7">
+                    <navigationItem key="navigationItem" title="IlliniSpaces" id="9Zl-UU-At7">
                         <barButtonItem key="backBarButtonItem" title="List" id="zyD-7A-tTw"/>
                         <barButtonItem key="leftBarButtonItem" image="Menu_3bars.png" id="ioW-NK-FTy">
                             <inset key="imageInsets" minX="-5" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -2445,11 +2445,11 @@ Remember your UW NetID will appear as the reviewer name.</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="3L4-Ky-WWo"/>
-        <segue reference="3Cj-Ws-5ju"/>
+        <segue reference="K9g-4O-dAk"/>
+        <segue reference="3uu-G9-i3V"/>
+        <segue reference="gf4-p1-rc6"/>
+        <segue reference="g4m-Tc-imM"/>
         <segue reference="CuN-QO-MxA"/>
-        <segue reference="YtI-mQ-38u"/>
-        <segue reference="8o3-ZB-NEA"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.63921568630000003" green="0.04745285563113992" blue="0.054841757837947543" alpha="1" colorSpace="calibratedRGB"/>
 </document>
