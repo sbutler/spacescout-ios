@@ -20,8 +20,15 @@
                                 <imageView userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="UIUC-logo_iOS_sidemenu.png" translatesAutoresizingMaskIntoConstraints="NO" id="WaB-Yx-8lp">
                                     <rect key="frame" x="20" y="507" width="270" height="36"/>
                                 </imageView>
+                                <button opaque="NO" tag="1300" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4O-wk-uqS">
+                                    <rect key="frame" x="0.0" y="0.0" width="288" height="155"/>
+                                    <inset key="imageEdgeInsets" minX="-50" minY="10" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" image="UIUC_LogoUnit_iOS_Sidemenu.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
                                 <button opaque="NO" tag="301" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="004-Ux-IMo">
-                                    <rect key="frame" x="20" y="117" width="176" height="24"/>
+                                    <rect key="frame" x="20" y="185" width="176" height="24"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -30,13 +37,13 @@
                                     </state>
                                 </button>
                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="310" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="220" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJa-DJ-QHg">
-                                    <rect key="frame" x="132" y="116" width="92" height="24"/>
+                                    <rect key="frame" x="132" y="184" width="92" height="24"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" tag="304" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQ9-ls-mbT">
-                                    <rect key="frame" x="20" y="182" width="194" height="22"/>
+                                    <rect key="frame" x="20" y="250" width="194" height="22"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     <state key="normal" title="Suggest a Space" image="iOS_SuggestSpace-Bulb.png">
@@ -45,7 +52,7 @@
                                     </state>
                                 </button>
                                 <button opaque="NO" tag="303" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCg-cb-206">
-                                    <rect key="frame" x="20" y="235" width="176" height="47"/>
+                                    <rect key="frame" x="20" y="303" width="176" height="47"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     <state key="normal" title="Settings" image="iOS_Settings-Cog.png">
@@ -54,24 +61,17 @@
                                     </state>
                                 </button>
                                 <imageView userInteractionEnabled="NO" alpha="0.39999999999999963" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="menu_separator.png" translatesAutoresizingMaskIntoConstraints="NO" id="6iC-Mi-TAA">
-                                    <rect key="frame" x="0.0" y="95" width="320" height="1"/>
+                                    <rect key="frame" x="0.0" y="163" width="320" height="1"/>
                                 </imageView>
                                 <imageView userInteractionEnabled="NO" alpha="0.39999999999999963" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="menu_separator.png" translatesAutoresizingMaskIntoConstraints="NO" id="4d6-48-m53">
-                                    <rect key="frame" x="0.0" y="160" width="320" height="1"/>
+                                    <rect key="frame" x="0.0" y="228" width="320" height="1"/>
                                 </imageView>
                                 <imageView userInteractionEnabled="NO" alpha="0.39999999999999963" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="menu_separator.png" translatesAutoresizingMaskIntoConstraints="NO" id="moL-sK-1gF">
-                                    <rect key="frame" x="0.0" y="225" width="320" height="1"/>
+                                    <rect key="frame" x="0.0" y="293" width="320" height="1"/>
                                 </imageView>
                                 <imageView userInteractionEnabled="NO" alpha="0.39999999999999963" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="menu_separator.png" translatesAutoresizingMaskIntoConstraints="NO" id="Hpq-ab-enf">
-                                    <rect key="frame" x="0.0" y="290" width="320" height="1"/>
+                                    <rect key="frame" x="0.0" y="358" width="320" height="1"/>
                                 </imageView>
-                                <button opaque="NO" tag="1300" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4O-wk-uqS">
-                                    <rect key="frame" x="0.0" y="0.0" width="288" height="96"/>
-                                    <inset key="imageEdgeInsets" minX="-50" minY="10" maxX="0.0" maxY="0.0"/>
-                                    <state key="normal" image="SS_LogoUnit_iOS_Sidemenu.png">
-                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                    </state>
-                                </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
@@ -97,8 +97,15 @@
                                 <imageView userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="UIUC-logo_iOS_sidemenu.png" translatesAutoresizingMaskIntoConstraints="NO" id="QGi-zi-bf2">
                                     <rect key="frame" x="20" y="424" width="270" height="36"/>
                                 </imageView>
+                                <button opaque="NO" tag="1300" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M6O-GX-0Za">
+                                    <rect key="frame" x="0.0" y="0.0" width="288" height="155"/>
+                                    <inset key="imageEdgeInsets" minX="-50" minY="10" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" image="UIUC_LogoUnit_iOS_Sidemenu.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
                                 <button opaque="NO" tag="301" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H97-ds-o26">
-                                    <rect key="frame" x="20" y="117" width="176" height="24"/>
+                                    <rect key="frame" x="20" y="185" width="176" height="24"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -108,13 +115,13 @@
                                     </state>
                                 </button>
                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="310" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="220" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8Y-0S-2W9">
-                                    <rect key="frame" x="132" y="116" width="92" height="24"/>
+                                    <rect key="frame" x="132" y="184" width="92" height="24"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" tag="304" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLc-Im-hXF">
-                                    <rect key="frame" x="20" y="182" width="194" height="22"/>
+                                    <rect key="frame" x="20" y="250" width="194" height="22"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     <state key="normal" title="Suggest a Space" image="iOS_SuggestSpace-Bulb.png">
@@ -123,7 +130,7 @@
                                     </state>
                                 </button>
                                 <button opaque="NO" tag="303" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEH-7O-e1U">
-                                    <rect key="frame" x="20" y="235" width="176" height="47"/>
+                                    <rect key="frame" x="20" y="303" width="176" height="47"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     <state key="normal" title="Settings" image="iOS_Settings-Cog.png">
@@ -132,24 +139,17 @@
                                     </state>
                                 </button>
                                 <imageView userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="menu_separator.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tlc-PK-xXP">
-                                    <rect key="frame" x="0.0" y="95" width="320" height="1"/>
+                                    <rect key="frame" x="0.0" y="163" width="320" height="1"/>
                                 </imageView>
                                 <imageView userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="menu_separator.png" translatesAutoresizingMaskIntoConstraints="NO" id="mir-UJ-ujY">
-                                    <rect key="frame" x="0.0" y="160" width="320" height="1"/>
+                                    <rect key="frame" x="0.0" y="228" width="320" height="1"/>
                                 </imageView>
                                 <imageView userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="menu_separator.png" translatesAutoresizingMaskIntoConstraints="NO" id="w6y-22-Uvc">
-                                    <rect key="frame" x="0.0" y="225" width="320" height="1"/>
+                                    <rect key="frame" x="0.0" y="293" width="320" height="1"/>
                                 </imageView>
                                 <imageView userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="menu_separator.png" translatesAutoresizingMaskIntoConstraints="NO" id="ul3-EU-9Ap">
-                                    <rect key="frame" x="0.0" y="290" width="320" height="1"/>
+                                    <rect key="frame" x="0.0" y="358" width="320" height="1"/>
                                 </imageView>
-                                <button opaque="NO" tag="1300" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M6O-GX-0Za">
-                                    <rect key="frame" x="0.0" y="0.0" width="288" height="96"/>
-                                    <inset key="imageEdgeInsets" minX="-50" minY="10" maxX="0.0" maxY="0.0"/>
-                                    <state key="normal" image="SS_LogoUnit_iOS_Sidemenu.png">
-                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                    </state>
-                                </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
@@ -165,8 +165,8 @@
         </view>
     </objects>
     <resources>
-        <image name="SS_LogoUnit_iOS_Sidemenu.png" width="197" height="46"/>
         <image name="UIUC-logo_iOS_sidemenu.png" width="159" height="26"/>
+        <image name="UIUC_LogoUnit_iOS_Sidemenu.png" width="197" height="105"/>
         <image name="iOS_FavList-Heart.png" width="24" height="24"/>
         <image name="iOS_Settings-Cog.png" width="24" height="24"/>
         <image name="iOS_SuggestSpace-Bulb.png" width="24" height="24"/>
