@@ -89,7 +89,7 @@
         NSString *oauth_secret = [plist_values objectForKey:@"oauth_secret"];
         
         if (use_token) {
-            KeychainItemWrapper *wrapper = [[KeychainItemWrapper alloc] initWithIdentifier:@"spacescout" accessGroup:nil];
+            KeychainItemWrapper *wrapper = [[KeychainItemWrapper alloc] initWithIdentifier:@"illinispaces" accessGroup:nil];
             
             access_token = [wrapper objectForKey:(__bridge id)kSecAttrAccount];
             access_token_secret = [wrapper objectForKey:(__bridge id)kSecValueData];

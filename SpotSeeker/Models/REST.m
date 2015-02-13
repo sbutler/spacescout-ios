@@ -149,7 +149,7 @@
         NSString *oauth_secret = [plist_values objectForKey:@"oauth_secret"];
 
         if (use_token) {
-            KeychainItemWrapper *wrapper = [[KeychainItemWrapper alloc] initWithIdentifier:@"spacescout" accessGroup:nil];
+            KeychainItemWrapper *wrapper = [[KeychainItemWrapper alloc] initWithIdentifier:@"illinispaces" accessGroup:nil];
 
             access_token = [wrapper objectForKey:(__bridge id)kSecAttrAccount];
             access_token_secret = [wrapper objectForKey:(__bridge id)kSecValueData];
@@ -173,7 +173,7 @@
     if (!use_oauth) {
         return TRUE;
     }
-    KeychainItemWrapper *wrapper = [[KeychainItemWrapper alloc] initWithIdentifier:@"spacescout" accessGroup:nil];
+    KeychainItemWrapper *wrapper = [[KeychainItemWrapper alloc] initWithIdentifier:@"illinispaces" accessGroup:nil];
     
     NSString *access_token = [wrapper objectForKey:(__bridge id)kSecAttrAccount];
     NSString *access_token_secret = [wrapper objectForKey:(__bridge id)kSecValueData];
@@ -185,7 +185,7 @@
 }
 
 +(void)setPersonalOAuthToken:(NSString *)token andSecret:(NSString *)secret {
-    KeychainItemWrapper *wrapper = [[KeychainItemWrapper alloc] initWithIdentifier:@"spacescout" accessGroup:nil];
+    KeychainItemWrapper *wrapper = [[KeychainItemWrapper alloc] initWithIdentifier:@"illinispaces" accessGroup:nil];
     [wrapper setObject:token forKey:(__bridge id)kSecAttrAccount];
     [wrapper setObject:secret forKey:(__bridge id)kSecValueData];
 }
@@ -195,7 +195,7 @@
     [defaults removeObjectForKey:@"current_user_login"];
     [defaults removeObjectForKey:@"current_user_email"];
 
-    KeychainItemWrapper *wrapper = [[KeychainItemWrapper alloc] initWithIdentifier:@"spacescout" accessGroup:nil];
+    KeychainItemWrapper *wrapper = [[KeychainItemWrapper alloc] initWithIdentifier:@"illinispaces" accessGroup:nil];
     [wrapper resetKeychainItem];
 }
 

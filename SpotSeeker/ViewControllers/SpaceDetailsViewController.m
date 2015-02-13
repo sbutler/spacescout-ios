@@ -1053,7 +1053,7 @@
         
         OAuthLoginViewController *auth_vc = [storyboard instantiateViewControllerWithIdentifier:@"OAuth_Login"];
         auth_vc.delegate = self;
-        auth_vc.title = @"SpaceScout";
+        auth_vc.title = @"IlliniSpaces";
         
         [self.navigationController pushViewController:auth_vc animated:YES];
     }
@@ -1071,7 +1071,7 @@
         
         OAuthLoginViewController *auth_vc = [storyboard instantiateViewControllerWithIdentifier:@"OAuth_Login"];
         auth_vc.delegate = self;
-        auth_vc.title = @"SpaceScout";
+        auth_vc.title = @"IlliniSpaces";
         
         [self.navigationController pushViewController:auth_vc animated:YES];
     }

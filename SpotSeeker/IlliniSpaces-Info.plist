@@ -45,10 +45,10 @@
 	<array>
 		<dict>
 			<key>CFBundleURLName</key>
-			<string>edu.uw.SpaceScout</string>
+			<string>edu.illinois.IlliniSpaces</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>SpaceScout</string>
+				<string>IlliniSpaces</string>
 			</array>
 		</dict>
 	</array>
