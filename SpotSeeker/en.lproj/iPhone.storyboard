@@ -864,7 +864,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                                     <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                     <inset key="imageEdgeInsets" minX="-5" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                    <state key="normal" title="Share" image="Share_Arrow.png">
+                                                    <state key="normal" title="Share" image="UIUC-share-arrow.png">
                                                         <color key="titleColor" red="0.0" green="0.23529411759999999" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
@@ -1871,7 +1871,7 @@ Remember your UW NetID will appear as the reviewer name.</string>
                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                     <inset key="titleEdgeInsets" minX="9" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     <inset key="imageEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                    <state key="normal" title="Write Review" image="WriteReview-Pen.png">
+                                    <state key="normal" title="Write Review" image="UIUC-pen.png">
                                         <color key="titleColor" red="0.0" green="0.23529411759999999" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
@@ -1879,7 +1879,7 @@ Remember your UW NetID will appear as the reviewer name.</string>
                                         <segue destination="YvS-nK-1VT" kind="push" identifier="write_review" id="s9i-6T-63E"/>
                                     </connections>
                                 </button>
-                                <imageView userInteractionEnabled="NO" tag="602" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StarRating-small_0_fill.png" id="QFc-Yi-5P0">
+                                <imageView userInteractionEnabled="NO" tag="602" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StarRating-small_0h_fill.png" id="QFc-Yi-5P0">
                                     <rect key="frame" x="101" y="52" width="87" height="19"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
@@ -1928,7 +1928,7 @@ Remember your UW NetID will appear as the reviewer name.</string>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
-                                        <imageView userInteractionEnabled="NO" tag="100" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StarRating-small_0_fill.png" id="2Dy-8C-fBJ">
+                                        <imageView userInteractionEnabled="NO" tag="100" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StarRating-small_0h_fill.png" id="2Dy-8C-fBJ">
                                             <rect key="frame" x="20" y="20" width="91" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
@@ -2426,11 +2426,10 @@ Remember your UW NetID will appear as the reviewer name.</string>
         <image name="Close_X_Btn.png" width="25" height="25"/>
         <image name="Fav_BlankHeart.png" width="17" height="15"/>
         <image name="Menu_3bars.png" width="24" height="24"/>
-        <image name="Share_Arrow.png" width="14" height="13"/>
-        <image name="StarRating-big_blank.png" width="44" height="42"/>
-        <image name="StarRating-small_0_fill.png" width="80" height="15"/>
+        <image name="StarRating-big_blank.png" width="44" height="44"/>
         <image name="StarRating-small_0h_fill.png" width="80" height="15"/>
-        <image name="WriteReview-Pen.png" width="13" height="13"/>
+        <image name="UIUC-pen.png" width="13" height="13"/>
+        <image name="UIUC-share-arrow.png" width="14" height="14"/>
         <image name="asterisk.png" width="22" height="22"/>
         <image name="comp-icon.png" width="16" height="16"/>
         <image name="flag_open.png" width="66" height="31"/>
@@ -2444,10 +2443,10 @@ Remember your UW NetID will appear as the reviewer name.</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="K9g-4O-dAk"/>
-        <segue reference="3uu-G9-i3V"/>
-        <segue reference="gf4-p1-rc6"/>
         <segue reference="g4m-Tc-imM"/>
+        <segue reference="K9g-4O-dAk"/>
+        <segue reference="gf4-p1-rc6"/>
+        <segue reference="ehC-Lb-oxn"/>
         <segue reference="CuN-QO-MxA"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.23529411764705882" blue="0.49019607843137253" alpha="1" colorSpace="calibratedRGB"/>
