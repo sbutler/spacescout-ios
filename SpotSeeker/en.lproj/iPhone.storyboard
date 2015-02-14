@@ -1777,7 +1777,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <string key="text">Explain your star ratings; why you liked or disliked the space.
 Be polite -- no profanity. 
-Remember your UW NetID will appear as the reviewer name.</string>
+Remember your NetID will appear as the reviewer name.</string>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                 <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
