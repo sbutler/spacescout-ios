@@ -284,7 +284,7 @@ NSString *UNSELECTED_IMAGE = @"StarRating-big_blank";
     UIButton *submit = (UIButton *)[self.view viewWithTag:300];
     if ([self hasValidReview]) {
         submit.enabled = TRUE;
-        submit.backgroundColor = [UIColor colorWithRed:81.0/255.0 green:77.0/255.0 blue:163.0/255.0 alpha:1.0];
+        submit.backgroundColor = [UIColor colorWithRed:0 green:60.0/255.0 blue:125.0/255.0 alpha:1.0];
     }
     else {
         submit.enabled = FALSE;

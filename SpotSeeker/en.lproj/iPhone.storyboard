@@ -2424,7 +2424,7 @@ Remember your NetID will appear as the reviewer name.</string>
     </scenes>
     <resources>
         <image name="Close_X_Btn.png" width="25" height="25"/>
-        <image name="Fav_BlankHeart.png" width="17" height="15"/>
+        <image name="Fav_BlankHeart.png" width="17" height="17"/>
         <image name="Menu_3bars.png" width="24" height="24"/>
         <image name="StarRating-big_blank.png" width="44" height="44"/>
         <image name="StarRating-small_0h_fill.png" width="80" height="15"/>
@@ -2443,10 +2443,10 @@ Remember your NetID will appear as the reviewer name.</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="g4m-Tc-imM"/>
-        <segue reference="K9g-4O-dAk"/>
-        <segue reference="gf4-p1-rc6"/>
-        <segue reference="ehC-Lb-oxn"/>
+        <segue reference="YtI-mQ-38u"/>
+        <segue reference="8o3-ZB-NEA"/>
+        <segue reference="3L4-Ky-WWo"/>
+        <segue reference="Zv8-Ju-hZd"/>
         <segue reference="CuN-QO-MxA"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.23529411764705882" blue="0.49019607843137253" alpha="1" colorSpace="calibratedRGB"/>
