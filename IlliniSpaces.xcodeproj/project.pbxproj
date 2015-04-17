@@ -1949,8 +1949,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = SpaceScout.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: University of Illinois at Urbana-Champaign (UPV4CB4H6W)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: University of Illinois at Urbana-Champaign (UPV4CB4H6W)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SpotSeeker/SpaceScout-Prefix.pch";
 				INFOPLIST_FILE = "SpotSeeker/IlliniSpaces-Info.plist";
@@ -1972,8 +1972,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = SpaceScout.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: University of Illinois at Urbana-Champaign (UPV4CB4H6W)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: University of Illinois at Urbana-Champaign (UPV4CB4H6W)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SpotSeeker/SpaceScout-Prefix.pch";
 				INFOPLIST_FILE = "SpotSeeker/IlliniSpaces-Info.plist";
@@ -1985,7 +1985,7 @@
 				);
 				PRODUCT_NAME = IlliniSpaces;
 				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "566ED9BC-0BC1-41F8-AB69-946D9F64CAE4";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
