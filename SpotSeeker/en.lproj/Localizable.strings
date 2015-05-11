@@ -225,7 +225,7 @@
 "favorites list title" = "Favorites";
 "favorite list empty" = "You have not favorited any spaces. Tap the star in the top right of a space to mark it as a favorite.";
 
-"spot details modification date" = "This space was last updated %@ by the University of Washington.";
+"spot details modification date" = "This space was last updated %@ by the University of Illinois.";
 
 "hours filter default start label" = "now";
 "hours filter default end label" = "no preference";

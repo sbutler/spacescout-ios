@@ -170,7 +170,7 @@ const float FAVORITES_REFRESH_INTERVAL = 10.0;
         }
                
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-        dateFormatter.dateFormat = @"yyyy-MM-dd'T'HH:mm:ss+'00:00'";
+        dateFormatter.dateFormat = @"yyyy-MM-dd'T'HH:mm:ss.SSSSSS";
 
         spot.modifified_date = [dateFormatter dateFromString:[spot_info objectForKey:@"last_modified"]];
         
