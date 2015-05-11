@@ -30,6 +30,9 @@
 @synthesize requests;
 @synthesize original_campus;
 
+@synthesize spots_by_building;
+@synthesize building_order;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -189,6 +192,29 @@
     }
  
     self.current_spots = [self.current_spots sortedArrayUsingSelector:@selector(compareToSpot:)];
+    
+    /* Group spots by building so that we can enable sections in the 
+     table view. This will sort building names by location by assuming
+     that if a spot is close to a user then the building is also. Not necessarily
+     true, but good enough.
+     */
+    NSMutableDictionary *bld_spots = [NSMutableDictionary dictionary];
+    NSMutableArray *bld_order = [NSMutableArray array];
+    
+    for (spot in self.current_spots) {
+        if (!spot.building_name || [@"" isEqualToString:spot.building_name])
+            continue;
+        
+        if (!bld_spots[spot.building_name]) {
+            bld_spots[spot.building_name] = [NSMutableArray array];
+            [bld_order addObject:spot.building_name];
+        }
+        
+        [bld_spots[spot.building_name] addObject:spot];
+    }
+    
+    self.spots_by_building = bld_spots;
+    self.building_order = bld_order;
 }
 
 #pragma mark -
@@ -198,11 +224,14 @@
     if (self.starting_in_search) {
         return 0;
     }
-    return self.spots_to_display.count;
+    
+    NSArray* building_spots = self.spots_by_building[self.building_order[section]];
+    return building_spots.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    Space *row_spot = [self.spots_to_display objectAtIndex:indexPath.row];
+    NSArray* building_spots = self.spots_by_building[self.building_order[indexPath.section]];
+    Space *row_spot = building_spots[indexPath.row];
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"spot_list_display"];
     if (cell == nil) {
@@ -385,8 +414,17 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 
-    self.selected_spot = [self.spots_to_display objectAtIndex:indexPath.row];
+    NSArray *building_spots = self.spots_by_building[self.building_order[indexPath.section]];
+    self.selected_spot = building_spots[indexPath.row];
     [self performSegueWithIdentifier:@"show_details" sender:nil];
+}
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return self.building_order.count;
+}
+
+-(NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    return self.building_order[section];
 }
 
 #pragma mark -

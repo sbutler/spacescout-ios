@@ -18,6 +18,9 @@
     IBOutlet UITableView *spot_table;
     Space *selected_spot;
     MKCoordinateRegion map_region;
+    
+    NSDictionary *spots_by_building;
+    NSArray *building_order;
 }
 
 -(void)sortSpots;
@@ -29,6 +32,9 @@
 @property (nonatomic, retain) UIAlertView *alert;
 @property (nonatomic, retain) NSMutableDictionary *requests;
 @property (nonatomic) Campus *original_campus;
+
+@property (nonatomic, retain) NSDictionary *spots_by_building;
+@property (nonatomic, retain) NSArray *building_order;
 
 //- (IBAction) btnClickCampusSelected:(id)sender;
 
