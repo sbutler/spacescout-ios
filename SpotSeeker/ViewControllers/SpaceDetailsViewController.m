@@ -44,6 +44,70 @@
 @synthesize is_sharing_space;
 @synthesize image_title_cell_while_building;
 
+-(BOOL)hasAccessNotes {
+    return self.spot.extended_info[@"access_notes"] != nil;
+}
+
+-(BOOL)hasReservationNotes {
+    return (self.spot.extended_info[@"reservation_notes"] != nil) || (self.spot.extended_info[@"reservation_url"] != nil);
+}
+
+-(NSString*)formattedAccessNotes {
+    NSString *notes = self.spot.extended_info[@"access_notes"];
+    
+    NSString *notes_html = nil;
+    if ([notes rangeOfString:@"<a"].location == NSNotFound) {
+        notes_html = [notes stringByReplacingOccurrencesOfString:@"&" withString:@"&amp;"];
+        notes_html = [notes_html stringByReplacingOccurrencesOfString:@">" withString:@"&gt;"];
+        notes_html = [notes_html stringByReplacingOccurrencesOfString:@"<" withString:@"&lt;"];
+    } else {
+        notes_html = notes;
+    }
+    
+    NSString *app_path = [[NSBundle mainBundle] bundlePath];
+    NSString *plist_path = [app_path stringByAppendingPathComponent:@"ui_magic_values.plist"];
+    NSDictionary *plist_values = [NSDictionary dictionaryWithContentsOfFile:plist_path];
+    
+    NSString *format =  [plist_values objectForKey:@"access_notes_wrapper_format"];
+    
+    return [NSString stringWithFormat:format, notes_html];
+}
+
+-(NSString*)formattedReservationNotes {
+    NSString *notes = self.spot.extended_info[@"reservation_notes"];
+    NSString *url = self.spot.extended_info[@"reservation_url"];
+    NSMutableString *result = [NSMutableString string];
+
+    if (url != nil) {
+        [result appendFormat:@"<a href='%@'>Make a reservation.</a>", url];
+    }
+    
+    if (notes != nil) {
+        NSString *notes_html = nil;
+        if ([notes rangeOfString:@"<a"].location == NSNotFound) {
+            notes_html = [notes stringByReplacingOccurrencesOfString:@"&" withString:@"&amp;"];
+            notes_html = [notes_html stringByReplacingOccurrencesOfString:@">" withString:@"&gt;"];
+            notes_html = [notes_html stringByReplacingOccurrencesOfString:@"<" withString:@"&lt;"];
+        } else {
+            notes_html = notes;
+        }
+        
+        if (url != nil) {
+            [result appendString:@"<br/><br/>"];
+        }
+        
+        [result appendString:notes_html];
+    }
+    
+    NSString *app_path = [[NSBundle mainBundle] bundlePath];
+    NSString *plist_path = [app_path stringByAppendingPathComponent:@"ui_magic_values.plist"];
+    NSDictionary *plist_values = [NSDictionary dictionaryWithContentsOfFile:plist_path];
+    
+    NSString *format =  [plist_values objectForKey:@"reservation_notes_wrapper_format"];
+    
+    return [NSString stringWithFormat:format, result];
+}
+
 #pragma mark -
 #pragma mark table control methods
 
@@ -89,18 +153,19 @@
     }
     else if (indexPath.section == 2) {
         int offset = 0;
-        if ([self.spot.extended_info objectForKey:@"access_notes"] != nil) {
+        if ([self hasAccessNotes]) {
             if (indexPath.row == offset) {
-                UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"access_notes_cell"];
-                if (cell == nil) {
-                    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"access_notes_cell"];
-                }
                 if (self.access_notes_height != nil) {
                     return [self.access_notes_height floatValue] + 5;
                 }
                 
+                UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"access_notes_cell"];
+                if (cell == nil) {
+                    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"access_notes_cell"];
+                }
+                
                 UIWebView *display = (UIWebView *)[cell viewWithTag:100];
-                [display loadHTMLString:[self.spot.extended_info objectForKey:@"access_notes"] baseURL:nil];
+                [display loadHTMLString:[self formattedAccessNotes] baseURL:nil];
                 NSInteger height = [[display stringByEvaluatingJavaScriptFromString:@"document.body.scrollHeight"] integerValue];
                 
                 return height + 20.0;
@@ -108,19 +173,19 @@
             offset++;
         }
         
-        if ([self.spot.extended_info objectForKey:@"reservation_notes"] != nil) {
+        if ([self hasReservationNotes]) {
             if (indexPath.row == offset) {
+                if (self.reservation_notes_height != nil) {
+                    return [self.reservation_notes_height floatValue] + 5;
+                }
+                
                 UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reservation_notes_cell"];
                 if (cell == nil) {
                     cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"reservation_notes_cell"];
                 }
                 
-                if (self.reservation_notes_height != nil) {
-                    return [self.reservation_notes_height floatValue] + 5;
-                }
-                
                 UIWebView *display = (UIWebView *)[cell viewWithTag:2];
-                [display loadHTMLString:[self.spot.extended_info objectForKey:@"reservation_notes"] baseURL:nil];
+                [display loadHTMLString:[self formattedReservationNotes] baseURL:nil];
                 NSInteger height = [[display stringByEvaluatingJavaScriptFromString:@"document.body.scrollHeight"] integerValue];
                 
                 return height + 20.0;
@@ -183,7 +248,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     int base_number = 2;
     if (section == 0) {
-        if ([self.spot.extended_info objectForKey:@"access_notes"] != nil || [self.spot.extended_info objectForKey:@"reservation_notes"] != nil) {
+        if ([self hasAccessNotes] || [self hasReservationNotes]) {
             base_number++;
         }
         if ([self.spot.extended_info objectForKey:@"auto_labstats_available"] != nil) {
@@ -200,10 +265,10 @@
     }
     else if (section == 2) {
         int count = 2;
-        if ([self.spot.extended_info objectForKey:@"access_notes"] != nil) {
+        if ([self hasAccessNotes]) {
             count++;
         }
-        if ([self.spot.extended_info objectForKey:@"reservation_notes"] != nil) {
+        if ([self hasReservationNotes]) {
             count++;
         }
         
@@ -221,10 +286,10 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 2) {
         int offset = 0;
-        if ([self.spot.extended_info objectForKey:@"access_notes"] != nil) {
+        if ([self hasAccessNotes]) {
             offset++;
         }
-        if ([self.spot.extended_info objectForKey:@"reservation_notes"] != nil) {
+        if ([self hasReservationNotes]) {
             offset++;
         }
    
@@ -290,7 +355,8 @@
     }
     else if (indexPath.section == 2)  {
         int offset = 0;
-        if ([self.spot.extended_info objectForKey:@"access_notes"] != nil) {
+        
+        if ([self hasAccessNotes]) {
             
             if (indexPath.row == offset) {
                 UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"access_notes_cell"];
@@ -299,19 +365,9 @@
                 }    
                 
                 UIWebView *notes = (UIWebView *)[cell viewWithTag:100];
-                NSString *encoded = [[self.spot.extended_info objectForKey:@"access_notes"] stringByReplacingOccurrencesOfString:@"&" withString:@"&amp;"];
-                encoded = [encoded stringByReplacingOccurrencesOfString:@">" withString:@"&gt;"];
-                encoded = [encoded stringByReplacingOccurrencesOfString:@"<" withString:@"&lt;"];
-                
-                NSString *app_path = [[NSBundle mainBundle] bundlePath];
-                NSString *plist_path = [app_path stringByAppendingPathComponent:@"ui_magic_values.plist"];
-                NSDictionary *plist_values = [NSDictionary dictionaryWithContentsOfFile:plist_path];
-                
-                NSString *format =  [plist_values objectForKey:@"access_notes_wrapper_format"];
-                NSString *final_notes = [NSString stringWithFormat:format, encoded];
                 
                 notes.delegate = self;
-                [notes loadHTMLString:final_notes baseURL:nil];
+                [notes loadHTMLString:[self formattedAccessNotes] baseURL:nil];
                 notes.frame = CGRectMake(notes.frame.origin.x, notes.frame.origin.y, notes.frame.size.width, [self.access_notes_height floatValue]);
                 
                 notes.scrollView.scrollEnabled = FALSE;
@@ -320,7 +376,8 @@
             }
             offset++;
         }
-        if ([self.spot.extended_info objectForKey:@"reservation_notes"] != nil) {
+        
+        if ([self hasReservationNotes]) {
             
             if (indexPath.row == offset) {
                 UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reservation_notes_cell"];
@@ -329,20 +386,9 @@
                     cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"reservation_notes_cell"];
                 }    
                 UIWebView *notes = (UIWebView *)[cell viewWithTag:2];
-                                
-                NSString *encoded = [[self.spot.extended_info objectForKey:@"reservation_notes"] stringByReplacingOccurrencesOfString:@"&" withString:@"&amp;"];
-                encoded = [encoded stringByReplacingOccurrencesOfString:@">" withString:@"&gt;"];
-                encoded = [encoded stringByReplacingOccurrencesOfString:@"<" withString:@"&lt;"];
-
-                NSString *app_path = [[NSBundle mainBundle] bundlePath];
-                NSString *plist_path = [app_path stringByAppendingPathComponent:@"ui_magic_values.plist"];
-                NSDictionary *plist_values = [NSDictionary dictionaryWithContentsOfFile:plist_path];
-                
-                NSString *format =  [plist_values objectForKey:@"reservation_notes_wrapper_format"];
-                NSString *final_notes = [NSString stringWithFormat:format, encoded];
                 
                 notes.delegate = self;
-                [notes loadHTMLString:final_notes baseURL:nil];
+                [notes loadHTMLString:[self formattedReservationNotes] baseURL:nil];
                 notes.frame = CGRectMake(notes.frame.origin.x, notes.frame.origin.y, notes.frame.size.width, [self.reservation_notes_height floatValue]);
 
                 notes.scrollView.scrollEnabled = FALSE;
@@ -497,15 +543,12 @@
 }
 
 -(CGFloat)heightOfAccessNotesCellInTable:(UITableView *)tableView {
-    NSString *access_notes = [self.spot.extended_info objectForKey:@"access_notes"];
-    NSString *reservation_notes = [self.spot.extended_info objectForKey:@"reservation_notes"];
-    
     NSString *cell_id;
     
-    if (access_notes != nil && reservation_notes != nil) {
+    if ([self hasAccessNotes] && [self hasReservationNotes]) {
         cell_id = @"notes_bubble_cell_both";
     }
-    else if (access_notes != nil) {
+    else if ([self hasAccessNotes]) {
         cell_id = @"notes_bubble_cell_access";
     }
     else {
@@ -814,14 +857,11 @@
 }
 
 -(UITableViewCell *)cellForAccessNotesInTable:(UITableView *)tableView {
-    NSString *access_notes = [self.spot.extended_info objectForKey:@"access_notes"];
-    NSString *reservation_notes = [self.spot.extended_info objectForKey:@"reservation_notes"];
-    
     NSString *cell_id;
-    if (access_notes != nil && reservation_notes != nil) {
+    if ([self hasAccessNotes] && [self hasReservationNotes]) {
         cell_id = @"notes_bubble_cell_both";
     }
-    else if (access_notes != nil) {
+    else if ([self hasAccessNotes]) {
         cell_id = @"notes_bubble_cell_access";
     }
     else {
@@ -832,7 +872,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cell_id];
     }
     
-    if ([self.spot.extended_info objectForKey:@"reservation_notes"] != nil) {
+    if ([self hasReservationNotes]) {
         UILabel *reservations_label = (UILabel *)[cell viewWithTag:31];
         if ([[self.spot.extended_info objectForKey:@"reservable"] isEqualToString:@"reservations"]) {
             reservations_label.text = NSLocalizedString(@"Space reservable required", nil);
@@ -1156,7 +1196,7 @@
     int row = 0;
     if(webView.tag == 2){// reservation_notes WebView
 
-        if ([self.spot.extended_info objectForKey:@"access_notes"] != nil) {
+        if ([self hasAccessNotes]) {
             row = 1;
         }
         if (self.reservation_notes_height != nil) {
