@@ -66,6 +66,11 @@
 		89DD53FD15B49D94009C2336 /* flag_open@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89DD53F915B49D94009C2336 /* flag_open@2x.png */; };
 		89EA961F15B4901A00078DD3 /* flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 89EA961D15B4901A00078DD3 /* flag.png */; };
 		89EA962015B4901A00078DD3 /* flag@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89EA961E15B4901A00078DD3 /* flag@2x.png */; };
+		AF01E6A21B30D0EA00A646FC /* PrivacyPolicyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF01E6A11B30D0EA00A646FC /* PrivacyPolicyViewController.m */; };
+		AF01E6A41B30F96000A646FC /* IlliniSpacesPrivacy Notice.rtf in Resources */ = {isa = PBXBuildFile; fileRef = AF01E6A31B30F96000A646FC /* IlliniSpacesPrivacy Notice.rtf */; };
+		AF01E6A81B32092B00A646FC /* UIUC-privacy.png in Resources */ = {isa = PBXBuildFile; fileRef = AF01E6A51B32092B00A646FC /* UIUC-privacy.png */; };
+		AF01E6A91B32092B00A646FC /* UIUC-privacy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF01E6A61B32092B00A646FC /* UIUC-privacy@2x.png */; };
+		AF01E6AA1B32092B00A646FC /* UIUC-privacy@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF01E6A71B32092B00A646FC /* UIUC-privacy@3x.png */; };
 		AF76A10E1A802C1D00DEE961 /* UIUC_LogoUnit_iOS_Sidemenu.png in Resources */ = {isa = PBXBuildFile; fileRef = AF76A10B1A802C1D00DEE961 /* UIUC_LogoUnit_iOS_Sidemenu.png */; };
 		AF76A10F1A802C1D00DEE961 /* UIUC_LogoUnit_iOS_Sidemenu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF76A10C1A802C1D00DEE961 /* UIUC_LogoUnit_iOS_Sidemenu@2x.png */; };
 		AF76A1101A802C1D00DEE961 /* UIUC_LogoUnit_iOS_Sidemenu@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF76A10D1A802C1D00DEE961 /* UIUC_LogoUnit_iOS_Sidemenu@3x.png */; };
@@ -407,6 +412,12 @@
 		89DD53F915B49D94009C2336 /* flag_open@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flag_open@2x.png"; sourceTree = "<group>"; };
 		89EA961D15B4901A00078DD3 /* flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flag.png; sourceTree = "<group>"; };
 		89EA961E15B4901A00078DD3 /* flag@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flag@2x.png"; sourceTree = "<group>"; };
+		AF01E6A01B30D0EA00A646FC /* PrivacyPolicyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrivacyPolicyViewController.h; path = ViewControllers/PrivacyPolicyViewController.h; sourceTree = "<group>"; };
+		AF01E6A11B30D0EA00A646FC /* PrivacyPolicyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PrivacyPolicyViewController.m; path = ViewControllers/PrivacyPolicyViewController.m; sourceTree = "<group>"; };
+		AF01E6A31B30F96000A646FC /* IlliniSpacesPrivacy Notice.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "IlliniSpacesPrivacy Notice.rtf"; sourceTree = "<group>"; };
+		AF01E6A51B32092B00A646FC /* UIUC-privacy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIUC-privacy.png"; sourceTree = "<group>"; };
+		AF01E6A61B32092B00A646FC /* UIUC-privacy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIUC-privacy@2x.png"; sourceTree = "<group>"; };
+		AF01E6A71B32092B00A646FC /* UIUC-privacy@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIUC-privacy@3x.png"; sourceTree = "<group>"; };
 		AF76A10B1A802C1D00DEE961 /* UIUC_LogoUnit_iOS_Sidemenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIUC_LogoUnit_iOS_Sidemenu.png; sourceTree = SOURCE_ROOT; };
 		AF76A10C1A802C1D00DEE961 /* UIUC_LogoUnit_iOS_Sidemenu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIUC_LogoUnit_iOS_Sidemenu@2x.png"; sourceTree = SOURCE_ROOT; };
 		AF76A10D1A802C1D00DEE961 /* UIUC_LogoUnit_iOS_Sidemenu@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIUC_LogoUnit_iOS_Sidemenu@3x.png"; sourceTree = SOURCE_ROOT; };
@@ -825,6 +836,9 @@
 		AFB33ED51A7B0FCC0091B1CE /* UIUC Images */ = {
 			isa = PBXGroup;
 			children = (
+				AF01E6A51B32092B00A646FC /* UIUC-privacy.png */,
+				AF01E6A61B32092B00A646FC /* UIUC-privacy@2x.png */,
+				AF01E6A71B32092B00A646FC /* UIUC-privacy@3x.png */,
 				AFD0D1941A8D8B7600C3AABE /* UIUC-pen.png */,
 				AFD0D1951A8D8B7600C3AABE /* UIUC-pen@2x.png */,
 				AFD0D1961A8D8B7600C3AABE /* UIUC-pen@3x.png */,
@@ -960,6 +974,8 @@
 				C21CBD3418EB84BE005C5FCB /* SpaceReviewsViewController.m */,
 				C2FC51401910323300472D4E /* SideMenuViewController.h */,
 				C2FC51411910323300472D4E /* SideMenuViewController.m */,
+				AF01E6A01B30D0EA00A646FC /* PrivacyPolicyViewController.h */,
+				AF01E6A11B30D0EA00A646FC /* PrivacyPolicyViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -1373,6 +1389,7 @@
 		C2FDB0E9150A802D00ED3A93 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AF01E6A31B30F96000A646FC /* IlliniSpacesPrivacy Notice.rtf */,
 				AFB33ED51A7B0FCC0091B1CE /* UIUC Images */,
 				C24B24DF158BC44F001C4B3F /* images */,
 				C25166681533713B002CEDB6 /* spotseeker.plist */,
@@ -1624,6 +1641,7 @@
 				897CF54615A23B4B007D5ABA /* search.png in Resources */,
 				C2ED2BB715A35A7C00662C0D /* ui_magic_values.plist in Resources */,
 				C265A7B818FCA2B30041F8FD /* StarRating-small_6h_fill@2x.png in Resources */,
+				AF01E6A81B32092B00A646FC /* UIUC-privacy.png in Resources */,
 				C270D6B91901E6CF00CFBF3D /* menu_separator@2x.png in Resources */,
 				C20328A318E61EA600E2A671 /* SS_LogoUnit_iOS_Sidemenu@2x.png in Resources */,
 				C270D6BD1901F10500CFBF3D /* menu_shadow@2x.png in Resources */,
@@ -1664,7 +1682,9 @@
 				AF76A10E1A802C1D00DEE961 /* UIUC_LogoUnit_iOS_Sidemenu.png in Resources */,
 				8940AD5715BF2EED00714AFB /* button_Next.png in Resources */,
 				8940AD5815BF2EED00714AFB /* button_Next@2x.png in Resources */,
+				AF01E6A41B30F96000A646FC /* IlliniSpacesPrivacy Notice.rtf in Resources */,
 				C265A7B218FCA2B30041F8FD /* StarRating-big_blank@2x.png in Resources */,
+				AF01E6A91B32092B00A646FC /* UIUC-privacy@2x.png in Resources */,
 				8940AD5B15BF311600714AFB /* filter_reset.png in Resources */,
 				AFBC46191A8EC6FF00E26264 /* StarRating-small_7h_fill.png in Resources */,
 				C2CFEAEA19087117002AF162 /* Menu_3bars@2x.png in Resources */,
@@ -1693,6 +1713,7 @@
 				8953B6D816EEA86F008BF921 /* Default@2x.png in Resources */,
 				898E35431703A984004AA71C /* Settings.bundle in Resources */,
 				C265A7B718FCA2B30041F8FD /* StarRating-small_4h_fill@2x.png in Resources */,
+				AF01E6AA1B32092B00A646FC /* UIUC-privacy@3x.png in Resources */,
 				06ACA01A189982D700113AD0 /* contact_config.json in Resources */,
 				AFD0D1971A8D8B7600C3AABE /* UIUC-pen.png in Resources */,
 				C265A7BE18FCAA030041F8FD /* WriteReview-Pen@2x.png in Resources */,
@@ -1813,6 +1834,7 @@
 				C28F16B518D8F09C00A220DD /* SpaceImagesScrollViewController.m in Sources */,
 				C2F715B618C5A49B00255582 /* UIImage+ImageEffects.m in Sources */,
 				C2CE6EA817722AA0009D1DA9 /* MainListViewController.m in Sources */,
+				AF01E6A21B30D0EA00A646FC /* PrivacyPolicyViewController.m in Sources */,
 				C22AA31A1805F55F004EC188 /* OAuthLoginViewController.m in Sources */,
 				C22AA31E180618EA004EC188 /* KeychainItemWrapper.m in Sources */,
 			);

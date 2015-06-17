@@ -11,6 +11,7 @@
 #import "FavoriteSpacesViewController.h"
 #import "MoreViewController.h"
 #import "MainListViewController.h"
+#import "PrivacyPolicyViewController.h"
 
 @implementation SideMenu
 @synthesize navigation_menu_view;
@@ -208,6 +209,7 @@ const float SIDE_MENU_START_SWIPE = 50.0;
     UIButton *logout_button = (UIButton *)[menu_view viewWithTag:302];
     UIButton *campus_chooser = (UIButton *)[menu_view viewWithTag:303];
     UIButton *suggest_space = (UIButton *)[menu_view viewWithTag:304];
+    UIButton *privacy_policy = (UIButton *)[menu_view viewWithTag:400];
     UIButton *icon_button = (UIButton *)[menu_view viewWithTag:1300];
 
     [icon_button removeTarget:nil
@@ -247,6 +249,13 @@ const float SIDE_MENU_START_SWIPE = 50.0;
                forControlEvents:UIControlEventAllEvents];
     
     [suggest_space addTarget:self action:@selector(openSuggestASpace:) forControlEvents: UIControlEventTouchUpInside];
+    
+    
+    [privacy_policy removeTarget:nil
+                          action:NULL
+                forControlEvents:UIControlEventAllEvents];
+    
+    [privacy_policy addTarget:self action:@selector(privacyPolicyButtonTouchUp:) forControlEvents:UIControlEventTouchUpInside];
 
 }
 
@@ -425,6 +434,20 @@ const float SIDE_MENU_START_SWIPE = 50.0;
     self.view_controller.navigationController.modalPresentationStyle = UIModalPresentationFullScreen;
     
     [self presentViewController:settings];
+}
+
+-(void)privacyPolicyButtonTouchUp: (id)sender {
+    if ([self.view_controller isKindOfClass:[PrivacyPolicyViewController class]]) {
+        [self slideHideMenu];
+        return;
+    }
+    
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"iPhone" bundle:nil];
+    PrivacyPolicyViewController *privacypolicy = (PrivacyPolicyViewController *)[sb instantiateViewControllerWithIdentifier:@"privacypolicy-vc"];
+    
+    self.view_controller.navigationController.modalPresentationStyle = UIModalPresentationFullScreen;
+    
+    [self presentViewController:privacypolicy];
 }
 
 -(void)homeButtonTouchUp:(id)sender {
